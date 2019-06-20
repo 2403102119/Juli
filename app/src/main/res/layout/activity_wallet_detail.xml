@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WalletDetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="171dp">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:text="可释放可用余额"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_can_release_money"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16.5dp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:textSize="23dp"
+            android:textColor="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="19dp"/>
+
+        <TextView
+            android:id="@+id/tv_wallet_release"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="释放"
+            android:textSize="20dp"
+            android:textColor="@color/text_blue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="释放余额中"
+            android:layout_marginTop="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_releasing_money"
+            android:textSize="23dp"
+            android:textColor="@color/text_red"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="171dp">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:text="可提现余额"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_can_withdraw_money"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16.5dp"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:textSize="23dp"
+            android:textColor="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="19dp"/>
+
+        <TextView
+            android:id="@+id/tv_wallet_withdraw"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="提现"
+            android:textSize="20dp"
+            android:textColor="@color/text_blue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@mipmap/links_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="我的邀请码"
+            android:gravity="bottom"
+            android:textSize="@dimen/dimen_20sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="wrap_content"
+            android:layout_weight="275"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/tv_my_code"
+            android:textIsSelectable="true"
+            android:gravity="bottom"
+            android:textSize="@dimen/dimen_30sp"
+            android:textColor="@color/text_blue2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_weight="79"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:gravity="bottom"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/nomalText"
+            android:text="众里寻他千百度，那人却在聚力链付阑珊处"
+            android:layout_width="wrap_content"
+            android:layout_weight="169"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:gravity="bottom"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/gray"
+            android:text="我在聚力链付等你，不见不散"
+            android:layout_width="wrap_content"
+            android:layout_weight="65"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="183"
+            android:layout_height="0dp">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/img_my_code"
+            android:src="@mipmap/def"
+            android:scaleType="centerCrop"
+            android:layout_width="105dp"
+            android:layout_height="105dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="bottom"
+            android:textSize="@dimen/dimen_13sp"
+            android:text="—  扫描下载聚力链付APP  —"
+            android:textColor="@color/hintColor"
+            android:layout_width="wrap_content"
+            android:layout_weight="60"
+            android:layout_height="0dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="90"/>
+
+        <TextView
+            android:id="@+id/tv_invite_link"
+            android:background="@drawable/bg_rectangel_black"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:paddingRight="@dimen/dimen_20dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:text="复   制   专   属   邀   请   链   接"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_weight="34"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="请 叮 嘱 好 友 在 [ 浏 览 器 ] 中 打 开 链 接"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/dimen_11sp"
+            android:layout_width="wrap_content"
+            android:layout_weight="44"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_links_back"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8.5dp"
+        android:padding="5dp"
+        android:src="@mipmap/cancel_icon"
+        android:layout_width="27dp"
+        android:layout_height="27dp" />
+
+    </RelativeLayout>

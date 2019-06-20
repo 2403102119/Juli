@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MySettingActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_change_login_password"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="登录密码"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_marginRight="10dp"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_change_pay_password"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="支付密码"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_marginRight="10dp"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="音响"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_audio_control"
+            android:src="@mipmap/back_right"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:background="@drawable/tab_auto_orb_selector"
+            android:layout_width="30dp"
+            android:layout_height="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_check_update"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="检查更新"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_juli"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="关于聚力"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_marginRight="10dp"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clear_cache"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="清除缓存"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:text="0 M"
+            android:textColor="@color/hintColor"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_unlogin"
+        android:background="@color/text_blue2"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+</LinearLayout>

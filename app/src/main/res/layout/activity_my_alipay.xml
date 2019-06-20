@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyAlipayActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/tv_my_pay_name"
+            android:text="支付宝"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_my_pay_show"
+            android:layout_marginLeft="96dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColor="@color/hintColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_my_pay_input"
+            android:layout_marginLeft="96dp"
+            android:background="@null"
+            android:visibility="gone"
+            android:inputType="textPhonetic"
+            android:digits="@string/number_and_letter"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:hint="请输入要绑定的微信账号"
+            android:textColor="@color/hintColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_my_pay_change"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/bind_gray_bg"
+        android:layout_marginTop="75.5dp"
+        android:layout_width="300dp"
+        android:text="更换支付宝"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_height="49dp" />
+
+</LinearLayout>

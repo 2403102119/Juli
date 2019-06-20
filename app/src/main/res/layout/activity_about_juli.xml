@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutJuliActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_coin"
+            android:src="@mipmap/about_juli_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="16.5dp"
+            android:layout_height="16.5dp" />
+
+        <TextView
+            android:id="@+id/tv_about_juli"
+            android:textSize="14sp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/hintColor"
+            android:text="武汉聚力众合电子商务有限公司版权所有"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

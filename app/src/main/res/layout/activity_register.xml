@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@mipmap/login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_register_name"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="109dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_register_logo"
+            android:layout_width="36dp"
+            android:layout_height="37dp"
+            android:src="@mipmap/juli_logo"/>
+
+        <ImageView
+            android:layout_width="147dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/img_register_logo"
+            android:src="@mipmap/juli_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register_phone"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/treasure_hunt_top_bg"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/rl_register_name">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="19dp"
+            android:src="@mipmap/phone_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp" />
+
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入手机号"
+            android:textColorHint="@color/nomalText"
+            android:textSize="13sp"
+            android:background="@null"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/nomalText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register_invitation_code"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/treasure_hunt_top_bg"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rl_register_phone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/invitation_code_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp" />
+
+
+        <EditText
+            android:inputType="textPhonetic"
+            android:id="@+id/et_register_invitation_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入邀请码（选填）"
+            android:textColorHint="@color/nomalText"
+            android:textSize="13sp"
+            android:background="@null"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/nomalText" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_register_password"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/treasure_hunt_top_bg"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rl_register_invitation_code">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/password_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:digits="@string/number_and_letter"
+            android:id="@+id/et_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="请输入密码"
+            android:textColorHint="@color/nomalText"
+            android:textSize="13sp"
+            android:background="@null"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/nomalText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register_verification"
+        android:layout_width="270dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rl_register_password">
+
+        <EditText
+            android:id="@+id/et_register_verification"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="39dp"
+            android:hint="请输入验证码"
+            android:textColorHint="@color/nomalText"
+            android:inputType="textPhonetic"
+            android:digits="@string/number_and_letter"
+            android:textSize="13sp"
+            android:background="@drawable/treasure_hunt_top_bg"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/nomalText" />
+
+        <TextView
+            android:id="@+id/tv_register_verification_show"
+            android:layout_width="105dp"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColorHint="@color/nomalText"
+            android:textSize="13sp"
+            android:background="@drawable/login_get_verification_btn_bg"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_marginTop="27dp"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reg_str"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/rl_register_verification"
+        android:background="@drawable/login_guide_login_btn_bg"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_register_agreement"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_register_agreement"
+            android:background="@drawable/checked_selector"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:padding="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/tv_read_agreement"
+            android:textSize="12sp"
+            android:layout_marginLeft="4dp"
+            android:padding="5dp"
+            android:includeFontPadding="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cb_register_agreement"
+            android:text="阅读并同意用户手册"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

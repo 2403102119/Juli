@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">聚力链付</string>
+    <string name="index">首页</string>
+    <string name="jiaoyi">交易</string>
+    <string name="tujian">图鉴</string>
+    <string name="luntan">论坛</string>
+    <string name="wode">我的</string>
+
+    <string name="net_error">服务器开小差了，请稍后再试!</string>
+    <string name="login_str">登录</string>
+    <string name="reg_str">注册</string>
+    <string name="kuaijiedenglu">—— 快捷登录 ——</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="unknown_error_toast">服务器异常，请稍后重试</string>
+    <string name="connect_failed_toast">服务器开小差了，请稍后再试!</string>
+    <string name="connect_timeout">请求超时，请检查您的网络</string>
+    <string name="third_upload_fail">第三方上传失败，请稍后重试</string>
+    <string name="download_fail">下载失败，请稍后重试</string>
+    <string name="user_logout">您的账号已在别处登录，请重新登录</string>
+    <string name="system_busy">服务器开小差了~</string>
+    <string name="msg_send_fail">发送消息失败，系统网络异常</string>
+    <string name="msg_delete_fail">消息删除失败，系统网络异常</string>
+
+    <string name="rong_response_405">(rong)您在对方黑名单中</string>
+    <string name="rong_response_22406">(rong)您不在当前群组中，暂无法发送消息</string>
+    <string name="rong_response_30001">(rong)Token错误，通讯中断</string>
+    <string name="rong_response_30002">(rong)网络连接不可用</string>
+    <string name="rong_response_30003">(rong)信令通讯中，ACK超时</string>
+    <string name="rong_response_30004">(rong)网络通讯中，HTTP发送超时</string>
+    <string name="rong_response_30005">(rong)网络通讯中，HTTP请求超时</string>
+    <string name="rong_response_30007">(rong)网络请求错误</string>
+    <string name="rong_response_30008">(rong)您当前网络可能被劫持，发送消息失败</string>
+    <string name="rong_response_30011">(rong)网络连接中断</string>
+    <string name="rong_response_30014">(rong)信息发送失败</string>
+    <string name="rong_response_31000">(rong)网络连接时，ACK超时</string>
+    <string name="rong_response_31001">(rong)协议参数错误</string>
+    <string name="rong_response_31002">(rong)参数错误，请重新配置KEY</string>
+    <string name="rong_response_31003">(rong)服务不可用</string>
+    <string name="rong_response_31004">(rong)用户名或密码错误</string>
+    <string name="rong_response_31007">(rong)您的当前包名与注册包名不一致</string>
+    <string name="rong_response_31008">(rong)APP被屏蔽/删除/不存在</string>
+    <string name="rong_response_31009">(rong)当前用户被屏蔽</string>
+    <string name="rong_response_31010">(rong)您已在其他设备登录</string>
+    <string name="rong_response_33001">(rong)请首先调用init在进行连接</string>
+    <string name="rong_response_33002">(rong)数据库错误</string>
+    <string name="rong_response_33006">(rong)连接中，请不要再次调用connect</string>
+    <string name="title_activity_opinion">OpinionActivity</string>
+    <string name="lizi16">一个吸引人的相册名字</string>
+    <string name="lizi17">123张</string>
+    <string name="lizi18">禁止他人评论</string>
+    <string name="lizi19">管理</string>
+    <string name="lizi20">2018年1月1日</string>
+    <string name="lizi21">全选</string>
+    <string name="lizi22">删除</string>
+    <string name="lizi23">已选0张</string>
+    <string name="lizi24">上传照片</string>
+    <string name="treasure_hunt">寻宝</string>
+    <string name="market">市场</string>
+    <string name="information">资讯</string>
+    <string name="mine">我的</string>
+    <string name="my_property">我的资产</string>
+    <string name="empty_str">抱歉，暂时没有数据哦~</string>
+    <string name="input_wx_accout">请输入要绑定的微信账号</string>
+    <string name="number_and_letter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="title_activity_pay_qcode">PayQcodeActivity</string>
+
+    <string name="title_dialog">友情提示</string>
+    <string name="message_permission_failed">尚未获取SD卡读取权限</string>
+    <string name="message_permission_rationale">获取SD卡读取权限</string>
+    <string name="btn_dialog_yes_permission">去设置</string>
+    <string name="btn_dialog_no_permission">取消</string>
+    <string name="message_setting_back">用户从设置回来了</string>
+    <string name="message_post_succeed">获取SD卡权限成功</string>
+    <string name="message_post_failed">获取SD卡权限失败</string>
+
+</resources>

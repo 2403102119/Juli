@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OreMachineDetailsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@mipmap/calulate_power_bg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:id="@+id/tv_ore_machine_percent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/text_red"
+                    android:text="+0.00%"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_below="@id/tv_ore_machine_percent"
+                    android:layout_marginTop="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ore_machine_describe"
+                        android:textColor="@color/nomalText"
+                        android:text="预计月收益率"
+                        android:layout_centerVertical="true"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/img_ore_machine"
+                        android:padding="5dp"
+                        android:layout_toRightOf="@id/tv_ore_machine_describe"
+                        android:layout_marginLeft="11dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/question_mark_icon"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="购买等级"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_user_level"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="购买范围"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_buy_average"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="收益范围"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_yield_average"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="剩余数量"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_surplus_number"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="产品特点"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_product_feature"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="产品类型"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_product_type"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:text="购买范围"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="1000~3000"
+                    android:layout_marginRight="11.5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_bg"/>
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10.5dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/nomalText"
+                    android:layout_marginTop="14.5dp"
+                    android:text="产品详情"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_detail_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="13dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hintColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="投资有风险，购买需谨慎"
+        android:layout_marginTop="16.5dp"
+        android:layout_marginBottom="16.5dp"
+        android:textColor="@color/text_color_gray4"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_ore_machine_buy_now"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:background="@color/text_blue2"
+        android:text="立即购买"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/yield_rate_detail_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="190dp">
+
+    <TextView
+        android:layout_marginTop="19dp"
+        android:text="预计月收益率仅把当前收益率换算成月增长率来计算，预计月增长率10%，如果运行15天，则实际在这段时间内预期的收益率为10%*15/30=5%，预计月增长率仅供参考，不代表实际收益"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_yield_rate_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20.5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_blue2"
+        android:textSize="17sp"
+        android:text="我知道了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

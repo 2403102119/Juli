@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/rb_treasure_hunt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_treasurehunt_selector"
+                android:gravity="center"
+                android:text="@string/treasure_hunt"
+                android:textColor="@color/radio_text_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_market"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_market_selector"
+                android:gravity="center"
+                android:text="@string/market"
+                android:textColor="@color/radio_text_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_information_selector"
+                android:gravity="center"
+                android:text="@string/information"
+                android:textColor="@color/radio_text_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_mine_selector"
+                android:gravity="center"
+                android:text="@string/mine"
+                android:textColor="@color/radio_text_selector"
+                android:textSize="14sp" />
+
+
+
+        </RadioGroup>
+
+</LinearLayout>

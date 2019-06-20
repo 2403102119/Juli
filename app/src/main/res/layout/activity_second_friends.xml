@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FirstFriendsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_second_friends_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/img_second_friend_back"
+            android:padding="5dp"
+            android:src="@mipmap/black_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="27.5dp" />
+
+        <TextView
+            android:text="二级好友"
+            android:textSize="17sp"
+            android:textColor="@color/title_bg_color"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_second_all_cost"
+        android:background="@color/text_blue2"
+        android:layout_alignParentBottom="true"
+        android:text="团队总金额： 0"
+        android:gravity="center"
+        android:textColor="@color/app_bg"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_below="@id/rl_second_friends_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.tcckj.juli.view.NiceRecyclerView
+        android:id="@+id/nrv_second_friends"
+        android:background="@color/white"
+        app:emptyText="@string/empty_str"
+        app:isShowEmptyText="true"
+        android:layout_below="@id/rl_second_friends_top"
+        android:layout_marginTop="6.5dp"
+        app:listDirection="VERTICAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

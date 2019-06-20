@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".activity.CalculatePowerStrategyActivity">
+
+    <RelativeLayout
+        android:background="@mipmap/calulate_power_bg"
+        android:layout_width="match_parent"
+        android:layout_height="175.5dp">
+
+        <TextView
+            android:layout_marginTop="43dp"
+            android:layout_centerHorizontal="true"
+            android:text="我 当 前 的 算 力"
+            android:textColor="@color/text_blue2"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_calculate_show"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:textSize="24dp"
+            android:textColor="@color/text_blue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/app_bg"/>
+<!--
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="算 力 攻 略"
+        android:textSize="17sp"
+        android:textColor="@color/text_blue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:text="1 算力越高，获得的宝藏越多；\n2 通过邀请好友的方式，可快速高算力；获得更多宝藏；\n3 除算力外，还有一些其他因影响挖宝效率用户可自行探索。"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:lineSpacingExtra="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="73dp"
+        android:text="快 速 提 高 收 益"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="@drawable/treasure_hunt_show_bg"
+        android:layout_width="260dp"
+        android:layout_height="35dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="34dp"
+        android:layout_width="292dp"
+        android:layout_height="115dp">
+
+        <TextView
+            android:text="tips"
+            android:background="@drawable/calculate_blue_bg"
+            android:gravity="center"
+            android:textColor="@color/text_blue2"
+            android:layout_width="42dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+-->
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        
+        <ImageView
+            android:src="@mipmap/calculate_power_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        <TextView
+            android:id="@+id/tv_raise_earnings_quickly"
+            android:layout_marginTop="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="260dp"
+            android:layout_height="35dp" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

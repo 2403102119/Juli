@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tcckj.juli">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 保持手机唤醒 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".base.BaseActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".activity.VerificationLoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.InviteFriendsActivity" />
+        <activity android:name=".activity.ReferralLinksActivity" />
+        <activity android:name=".activity.ContractRecordActivity" />
+        <activity android:name=".activity.CalculatePowerStrategyActivity" />
+        <activity android:name=".activity.CalculatePowerRecordActivity" />
+        <activity android:name=".activity.OreMachineDetailsActivity" />
+        <activity android:name=".activity.PersonalInformationActivity" />
+        <activity android:name=".activity.BindAlipayActivity" />
+        <activity android:name=".activity.MyAlipayActivity" />
+        <activity android:name=".activity.CertificationActivity" />
+        <activity android:name=".activity.FirstFriendsActivity" />
+        <activity android:name=".activity.SecondFriendsActivity" />
+        <activity android:name=".activity.MyWalletActivity" />
+        <activity android:name=".activity.MySettingActivity" />
+        <activity android:name=".activity.WalletDetailActivity" />
+        <activity android:name=".activity.WithdrawActivity" />
+        <activity android:name=".activity.TransactionRecordActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.ApplyPortActivity" />
+        <activity android:name=".activity.AboutJuliActivity" />
+        <activity android:name=".activity.MyPortActivity" />
+        <activity android:name=".activity.FrozenWalletActivity" />
+        <activity android:name=".activity.ContractDetailActivity" />
+        <activity android:name=".activity.ReleaseDetailActivity" />
+        <activity android:name=".activity.RechargeActivity" />
+        <activity android:name=".activity.UnfreezeWalletActivity" />
+        <activity android:name=".activity.WebShowActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b04e023a40fa3728d00001b" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity android:name=".activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PayQcodeActivity"
+            android:label="@string/title_activity_pay_qcode"
+            android:theme="@style/AppTheme" />
+
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".activity.WebShow2Activity" />
+        <activity android:name=".activity.WithdrawRecordActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity"></activity>
+    </application>
+
+</manifest>

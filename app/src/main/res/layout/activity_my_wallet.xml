@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyWalletActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_integral_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/jifen_wallet"
+            android:layout_centerVertical="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:text="积分钱包"/>
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/tuijian_wallet"
+            android:layout_centerVertical="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:text="推荐钱包"/>
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/dongtai_wallet"
+            android:layout_centerVertical="true"
+            android:layout_width="18dp"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:text="动态钱包"/>
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_static_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/jingtai_wallet"
+            android:layout_centerVertical="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:text="静态钱包"/>
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_frozen_wallet"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/dongjie_wallet"
+            android:layout_centerVertical="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:text="冻结钱包"/>
+
+        <ImageView
+            android:src="@mipmap/back_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="17.5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

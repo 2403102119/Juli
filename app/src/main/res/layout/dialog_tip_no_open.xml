@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/yield_rate_detail_bg"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="match_parent"
+        android:text="敬请期待"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_weight="2"
+        android:layout_height="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/nomalText"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_sure"
+        android:layout_width="match_parent"
+        android:text="确定"
+        android:textColor="@color/text_blue2"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

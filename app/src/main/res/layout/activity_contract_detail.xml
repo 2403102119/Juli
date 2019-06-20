@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OreMachineDetailsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@mipmap/calulate_power_bg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:id="@+id/tv_contract_percent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:textSize="25sp"
+                android:textColor="@color/text_red"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_below="@id/tv_contract_percent"
+                android:layout_marginTop="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ore_machine_describe"
+                    android:textColor="@color/nomalText"
+                    android:text="预计月收益率"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_month_rate"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tv_ore_machine_describe"
+                    android:layout_marginLeft="11dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/question_mark_icon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="合约名称"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_name"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="购买时间"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_date"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="购买金额"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_cost"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="收益"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_rate"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="合约状态"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_state"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_marginLeft="10.5dp"
+                android:textSize="17sp"
+                android:textColor="@color/nomalText"
+                android:text="产品类型"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_contract_detail_type"
+                android:layout_marginRight="11.5dp"
+                android:textSize="15sp"
+                android:textColor="@color/hintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_release_principal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_blue2"
+        android:text="释放本金"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+    <TextView
+        android:layout_above="@id/tv_release_principal"
+        android:text="投资有风险，购买需谨慎"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16.5dp"
+        android:textColor="@color/text_color_gray4"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FrozenWalletActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_balance_show"
+        android:background="@mipmap/wallet_balance_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/nomalText"
+            android:text="可用余额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="2000"
+            android:textSize="24sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_red"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll_balance_show"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp">
+
+        <TextView
+            android:text="*"
+            android:textSize="15sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_blue_fuhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:text="冻结金额不可用于提现，只有解冻之后才可用进行提现"
+            android:textColor="@color/hintColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

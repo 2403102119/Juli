@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/yield_rate_detail_bg"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:text="修改昵称"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/nomalText"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        <EditText
+            android:id="@+id/et_dialog_input_name"
+            android:layout_width="match_parent"
+            android:hint="请输入昵称"
+            android:gravity="center"
+            android:background="@null"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/nomalText"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_dialog_change_name_left"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/nomalText"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_change_name_right"
+                android:text="确认"
+                android:gravity="center"
+                android:textColor="@color/text_blue2"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

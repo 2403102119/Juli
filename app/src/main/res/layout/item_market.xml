@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/img_item_market"
+        android:src="@mipmap/def"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="92dp" />
+
+<!--    <TextView
+        android:id="@+id/tv_market_averageRate"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="33dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <View
+        android:id="@+id/view_market_item"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@id/img_item_market"
+        android:background="@color/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_market_item_buy"
+        android:background="@drawable/bg_rectangel_blue_5"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_blue2"
+        android:layout_below="@id/view_market_item"
+        android:text="立即购买"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_below="@id/tv_market_item_buy"
+        android:background="@color/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</RelativeLayout>

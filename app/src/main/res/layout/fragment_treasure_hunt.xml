@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="475dp"
+            android:background="@mipmap/treasure_hunt_bg">
+
+            <RelativeLayout
+                android:id="@+id/rl_notice_show"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/treasure_hunt_top_bg"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_hunt_top_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/loudspeaker"/>
+
+                <TextView
+                    android:id="@+id/tv_hunt_broadcast"
+                    android:layout_toRightOf="@id/img_hunt_top_icon"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--<com.tcckj.juli.view.VerticalMarqueeView
+                    android:id="@+id/tv_hunt_broadcast"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@id/img_hunt_top_icon"
+                    android:layout_centerVertical="true"
+                    android:scrollbars="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"/>-->
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_hunt_suanli_show"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:text="当前挖宝算力  0"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="22dp"
+                android:layout_below="@id/rl_notice_show"
+                android:background="@drawable/treasure_hunt_show_bg"/>
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:text="宝箱分为铜，银，金箱子"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/tv_hunt_suanli_show"/>
+
+            <ImageView
+                android:id="@+id/img_hunt_my_property"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="39dp"
+                android:src="@mipmap/my_property"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="12sp"
+                android:text="@string/my_property"/>
+
+            <ImageView
+                android:id="@+id/img_hunt_promote"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="107dp"
+                android:layout_marginBottom="39dp"
+                android:src="@mipmap/promote"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="102dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="12sp"
+                android:text="提升算力"/>
+
+            <ImageView
+                android:id="@+id/img_hunt_invite_friends"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="34dp"
+                android:layout_marginBottom="39dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/invite_friends"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="29dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:text="邀请好友"/>
+
+            <TextView
+                android:id="@+id/tv_box_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:textColor="@color/yellows"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_box_bg"
+                android:layout_marginTop="130dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="250dp" />
+
+            <ImageView
+                android:id="@+id/img_orb_show"
+                android:src="@mipmap/tieqiao_static"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/tv_box_bottom_true"
+                android:textColor="@color/yellows"
+                android:layout_marginTop="350dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_box_bottom"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_orb_show"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_color_gray"
+                android:text="自动挖宝"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_auto_hunt_tip"
+                android:layout_marginLeft="73dp"
+                android:layout_centerVertical="true"
+                android:text="挖宝中"
+                android:visibility="gone"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:background="@drawable/treasure_hunt_show_bg"
+                android:layout_width="50dp"
+                android:layout_height="14dp" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_hunt"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/tab_auto_orb_selector"
+                android:button="@null"/>
+
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_get_detail"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:src="@mipmap/advertising"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp">
+
+                <TextView
+                    android:id="@+id/tv_hunt_newest_record"
+                    android:layout_centerHorizontal="true"
+                    android:text="最新记录"
+                    android:textSize="13sp"
+                    android:textColor="@color/nomalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@id/tv_hunt_newest_record"
+                    android:src="@mipmap/hunt_record_left" />
+
+                <ImageView
+                    android:layout_toRightOf="@id/tv_hunt_newest_record"
+                    android:layout_marginLeft="9dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="90dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/hunt_record_right"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_hunt_contract_tip"
+                android:visibility="gone"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="11dp"
+                android:gravity="center"
+                android:text="暂无最新记录"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_hunt_contract_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+
+                <TextView
+                    android:text="合约"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_bold_gray"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="购买时间"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_bold_gray"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="累计收益"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_bold_gray"
+                    android:layout_marginRight="12dp"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hunt_contract1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_hunt_name1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_gray2"
+                        android:textSize="12sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_hunt_time1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_color_gray2"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_hunt_cost1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_blue2"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_hunt_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/app_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_hunt_contract2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_hunt_name2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_gray2"
+                    android:textSize="12sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_hunt_time2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_gray2"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_hunt_cost2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/text_blue2"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_hunt_get_more"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:text="查看更多"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_gray2"
+                android:background="@drawable/bg_rectangel_stroke"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="19dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

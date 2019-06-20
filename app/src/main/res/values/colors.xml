@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorred">#FF3A3A</color>
+
+    <color name="colorfenred">#ff2B2B</color>
+
+    <color name="orange">#EE8F29</color>
+    <color name="blue">#00a2ff</color>
+
+    <color name="red">#FF2E2E</color>
+    <color name="yellows">#FEE32A</color>
+
+    <color name="backGrey">#FDFAF0</color>
+    <color name="lineGrey">#FDFAF0</color>
+
+
+    <color name="send">#C7C7C7</color>
+    <color name="tiaokuan">#44B3De</color>
+
+    <color name="white_normal">#ffffffff</color>
+
+    <color name="fuli_yellow_zi">#FEE858</color>
+    <color name="fuli_yellow_daijinquan">#FFE000</color>
+
+
+    <color name="text_color_gray">#b5b5b5</color>
+    <color name="green">#009E8F</color>
+
+
+    <color name="bigred">#EE0C2A</color>
+
+    <color name="bigorange">#E98723</color>
+
+    <color name="littlered">#FF1D1D</color>
+
+    <color name="hui">#F8F8F8</color>
+
+
+    <color name="main_top_color">#f7614d</color>
+    <color name="main_top_tab_color">#fcc9c5</color>
+    <color name="main_top_tab_color_2">#ffffff</color>
+
+    <color name="matrix_color">#ffffff</color>
+
+
+
+    <!-- 橙色 -->
+    <color name="orange_color">#de6838</color>
+
+
+
+    <color name="page_backgroup">#f2f2f2</color>
+
+    <!-- 西红柿色 -->
+    <color name="orangered">#ff4500</color>
+
+    <!-- 淡灰色 -->
+    <color name="crimson">#dc143c</color>
+
+
+    <color name="colorGreen">#3cda38</color>
+    <color name="colorRed">#ec0909</color>
+
+    <color name="text_bold_gray">#656464</color>
+
+
+    <color name="messageshop">#67DDE0</color>
+
+    <color name="notice_more_back">#EFEFEF</color>
+
+
+
+    <color name="pokedex_type">#4BD796</color>
+
+    <color name="yikoujia_chengjiao">#FEFEFE</color>
+
+    <color name="shaixuan_false">#F0F0F0</color>
+
+
+    <color name="wuliu_input">#F2F5F7</color>
+
+    <color name="split_line">#11112233</color>
+
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+
+    <color name="my_order_fabu_delete">#EF3B3B</color>
+
+    <color name="viewline">#F7F7F7</color>
+
+    <color name="address_checkbox_color">#E93B39</color>
+
+    <color name="little_black">#010101</color>
+
+
+    <!-- 灰色 -->
+    <color name="grey_color1">#333333</color>
+
+    <color name="nomalText">#333333</color>
+    <color name="gray">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="hintColor">#999999</color>
+
+    <color name="my_order_fabu_bianji">#CCCCCC</color>
+
+
+    <!--多肉-->
+    <color name="login_guide_login_btn_bg">#04BEBD</color>
+
+    <color name="message_set_view">#EEEEEE</color>
+    <color name="trasparent">#ffffffff</color>
+    <color name="text_color_gray2">#858585</color>
+    <color name="text_blue">#004184</color>
+    <color name="title_bg_color">#525252</color>
+    <color name="app_bg">#f4f6f9</color>
+    <color name="text_blue2">#3b76b3</color>
+    <color name="text_blue3">#00346a</color>
+    <color name="ranking_list_gray">#9c9c9c</color>
+    <color name="text_color_gray3">#707070</color>
+    <color name="btn_blue_bg">#0ca0f0</color>
+    <color name="text_gray_rule">#7d7c7c</color>
+    <color name="text_red">#ff0000</color>
+    <color name="text_color_gray4">#b2b2b2</color>
+    <color name="text_blue_fuhao">#2261a5</color>
+    <color name="text_blue4">#0066ce</color>
+
+</resources>

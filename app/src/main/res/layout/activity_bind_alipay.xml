@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BindAlipayActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/rl_my_pay_show1"
+        android:visibility="gone"
+        android:layout_below="@id/view_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/tv_bind_account_tip"
+            android:text="当前支付宝账号"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bind_alipay_show"
+            android:layout_marginLeft="105.5dp"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColorHint="@color/hintColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/rl_my_pay_show2"
+        android:layout_below="@id/rl_my_pay_show1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/tv_my_pay_name"
+            android:text="支付宝"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_my_pay_input_accout"
+            android:layout_marginLeft="96dp"
+            android:inputType="number"
+            android:digits="@string/number_and_letter"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:hint="请输入要绑定的支付宝账号"
+            android:textSize="13sp"
+            android:textColorHint="@color/hintColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_pay_show3"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/rl_my_pay_show2"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="真实姓名"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_my_pay_input_name"
+            android:layout_marginLeft="96dp"
+            android:background="@null"
+            android:hint="请输入真实姓名"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:textColorHint="@color/hintColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_my_pay_sure"
+        android:layout_below="@id/rl_my_pay_show3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/bind_gray_bg"
+        android:layout_marginTop="31dp"
+        android:layout_width="300dp"
+        android:text="确定绑定"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_height="49dp" />
+
+</RelativeLayout>

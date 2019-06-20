@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_contact_describe"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:text="推荐好友"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_contact_value"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="+1"
+        android:textSize="13sp"
+        android:textColor="@color/text_blue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_contact_date"
+        android:layout_marginRight="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="2018-04-04"
+        android:textSize="11sp"
+        android:textColor="@color/hintColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+</RelativeLayout>

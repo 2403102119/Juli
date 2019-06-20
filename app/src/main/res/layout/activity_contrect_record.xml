@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    tools:context=".activity.ContractRecordActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/app_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:text="合约"
+            android:textSize="15sp"
+            android:textColor="@color/text_bold_gray"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="购买时间"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:textColor="@color/text_bold_gray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="累计收益"
+            android:textSize="15sp"
+            android:textColor="@color/text_bold_gray"
+            android:layout_marginRight="12dp"/>
+    </LinearLayout>
+
+    <com.tcckj.juli.view.NiceRecyclerView
+        android:id="@+id/nrv_contract_record"
+        android:background="@color/white"
+        app:isShowEmptyText="true"
+        app:emptyText="@string/empty_str"
+        app:listDirection="VERTICAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TransactionRecordActivity">
+
+    <RadioGroup
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RadioButton
+            android:id="@+id/rb_transaction_record_income"
+            android:text="收入"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:button="@null"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:background="@drawable/rb_choose_bg_selector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_transaction_record_expenditure"
+            android:text="支出"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:button="@null"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:background="@drawable/rb_choose_bg_selector"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.tcckj.juli.view.NiceRecyclerView
+        android:id="@+id/nrv_transaction_record"
+        app:listDirection="VERTICAL"
+        app:emptyText="@string/empty_str"
+        app:isShowEmptyText="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

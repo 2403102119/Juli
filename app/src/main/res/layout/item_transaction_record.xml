@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_transaction_title"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:textColor="@color/text_blue2"
+        android:text="挖宝收入"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_transaction_integral"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10.5dp"
+        android:layout_marginRight="15dp"
+        android:text="积分：120"
+        android:textSize="15sp"
+        android:textColor="@color/text_blue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_transaction_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="11.5dp"
+        android:includeFontPadding="false"
+        android:text="2018-04-04"
+        android:textSize="8.5dp"
+        android:textColor="@color/hintColor"
+        android:layout_width="wrap_content"
+        android:layout_height="8.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_bg"/>
+
+</RelativeLayout>

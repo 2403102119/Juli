@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InviteFriendsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/invite_friends_bg"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="163dp" />
+
+            <RelativeLayout
+                android:background="@mipmap/friends_num_bg"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_width="325dp"
+                android:layout_height="104.5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_to_first_friend"
+                    android:layout_width="162.5dp"
+                    android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_first_frinds_num"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="一级好友数"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_first_friends_number"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_first_all_get_jifen"
+                    android:layout_marginLeft="32.5dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="累计获得积分"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_first_friends_jifen"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_to_second_friend"
+                    android:layout_toRightOf="@id/rl_to_first_friend"
+                    android:layout_width="162.5dp"
+                    android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_second_frinds_num"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="二级好友数"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_second_friends_number"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_all_get_jifen"
+                    android:layout_marginRight="50.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="累计获得积分"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_second_friends_jifen"
+                    android:layout_marginRight="72dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="39dp"
+                android:textSize="13sp"
+                android:textColor="@color/nomalText"
+                android:text="奖励规则"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="52dp"
+                android:layout_marginTop="17dp"
+                android:textSize="11sp"
+                android:textColor="@color/text_gray_rule"
+                android:lineSpacingExtra="3dp"
+                android:text="1.将你的专属二维码，链接分享到社交网络；\n2.邀请好友通过你的二维码，链接下载激活聚力APP；\n3.好友注册成功后，即可立即获得积分宝箱奖励；\n4.在此之后你还可以额外获得活动期间好友的积分的收益来获取佣金；\n5.邀请奖励和收益分成支持多级，每级奖励递减；即：您邀请的J1用户又邀请了J2用户，您也可以获得J2的分成收益；\n6.聚力科技拥有法律范围内对于活动的最终解释权，并将严查虚假。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_referral_links"
+        android:layout_width="match_parent"
+        android:background="@color/btn_blue_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:text="推 广 链 接"/>
+
+</RelativeLayout>

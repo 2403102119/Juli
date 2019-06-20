@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    tools:context=".activity.PersonalInformationActivity">
+
+    <RelativeLayout
+        android:background="@mipmap/personal_info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <ImageView
+            android:id="@+id/img_personal_back"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_width="20dp"
+            android:layout_height="23.5dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="个人资料"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.tcckj.juli.view.ZQRoundOvalImageView
+            android:id="@+id/img_personal_head"
+            android:layout_marginTop="74dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/def_head"
+            android:layout_width="74dp"
+            android:layout_height="74dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="手机号"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_personal_phone"
+            android:layout_marginRight="30dp"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:textColor="@color/hintColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="支付宝"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_alipay_show"
+            android:layout_marginRight="3dp"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:textColor="@color/hintColor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_to_bind_alipay"
+            android:src="@mipmap/back_right"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="27.5dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:text="微信"
+            android:layout_marginLeft="10.5dp"
+            android:textSize="17sp"
+            android:textColor="@color/nomalText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_wechat_show"
+            android:layout_marginRight="3dp"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:textColor="@color/hintColor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_to_bind_wechat"
+            android:src="@mipmap/back_right"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="27.5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
